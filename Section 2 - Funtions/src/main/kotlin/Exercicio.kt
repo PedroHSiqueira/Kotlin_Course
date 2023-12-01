@@ -1,7 +1,7 @@
 fun main() {
     calculoTempo(2u)
     println(comprimento("Hello World!"))
-    println(areaCubo(4u, 5u, 10u))
+    println(areaCubo(4u))
     println(conversorMilhas(20f))
     println(trocaCaracteres("abacate"))
 }
@@ -18,7 +18,7 @@ fun calculoTempo(anos: UInt) {
 
 fun comprimento(texto: String) = "${texto.length} caracteres de comprimento"
 
-fun areaCubo(a: UInt, b: UInt, c: UInt) = "${a * b * c} De Area"
+fun areaCubo(a: UInt) = "${a * a * a} De Area"
 
 fun conversorMilhas(milhas: Float) = "${milhas * 1.6} Kilometros"
 
