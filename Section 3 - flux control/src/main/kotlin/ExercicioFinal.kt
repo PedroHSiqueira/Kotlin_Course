@@ -1,7 +1,6 @@
 fun main() {
     ex8("xxooox")
     ex8("xoxox")
-
 }
 
 fun ex1() {
