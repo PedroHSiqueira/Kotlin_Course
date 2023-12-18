@@ -16,6 +16,11 @@ fun countXO(str: String): Boolean {
     return countO == countX && countO != 0
 }
 
+fun abc(): Boolean{
+    val str: String? = null
+    return str!!.length == 0
+}
+
 fun main() {
     println(countXO("xxoo"))
     println(countXO("xxooo"))
