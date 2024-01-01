@@ -1,5 +1,14 @@
 class Animal(val especie: String) {
-    var fala = ""
+    private var fala = ""
+        // Getter e Setter
+        get() {
+            println("Acesso Getter")
+            return field
+        }
+        set(value) {
+            println("Acesso Setter")
+            field = value
+        }
 
     //é usado assim que a classe for istanciada
     init {
@@ -18,5 +27,8 @@ class Animal(val especie: String) {
 }
 
 fun main() {
-    Animal("gato").falar()
+    val animal = Animal("Cachorro")
+    println(animal.especie)
+    animal.falar()
+
 }
