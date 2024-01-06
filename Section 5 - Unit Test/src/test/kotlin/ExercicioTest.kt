@@ -6,9 +6,9 @@ class ExercicioTest {
 
     @Test
     @DisplayName("Teste Portaria")
-    fun testPortaria(){
-        Assertions.assertEquals(portaria(15,"",""), "Negado.")
-        Assertions.assertEquals(portaria(20,"",""), "Negado.")
+    fun testPortaria() {
+        Assertions.assertEquals(portaria(15, "", ""), "Negado.")
+        Assertions.assertEquals(portaria(20, "", ""), "Negado.")
         Assertions.assertEquals(portaria(25, "VIP", ""), "Negado.")
 
         Assertions.assertEquals(portaria(25, "comum", "xt56656"), "Welcome.")
