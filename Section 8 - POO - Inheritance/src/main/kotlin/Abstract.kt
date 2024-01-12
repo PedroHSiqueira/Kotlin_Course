@@ -1,3 +1,9 @@
+interface Selvagem {
+    fun atacar(){
+        println("Hello World!")
+    }
+}
+
 abstract class Mamifero(nome: String) {
     fun acordar() {}
 
@@ -6,7 +12,8 @@ abstract class Mamifero(nome: String) {
     abstract fun falar()
 }
 
-class Cachorro(nome: String) : Mamifero(nome) {
+//Selvagem implementada após a " , "
+class Cachorro(nome: String) : Mamifero(nome), Selvagem {
     override fun falar() {
         println("Woof Woof")
     }
