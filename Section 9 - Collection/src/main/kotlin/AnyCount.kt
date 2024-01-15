@@ -6,6 +6,12 @@ fun main() {
 
     // o count conta o numero de elementos na lista
     println("Tenho ${data.count()} Elementos")
+
+    // o first retorna o primeiro elemento da lista
+    println(data.firstOrNull())
+
+    //o last retorna o ultimo elemento da lista
+    println(data.lastOrNull())
 }
 
 
