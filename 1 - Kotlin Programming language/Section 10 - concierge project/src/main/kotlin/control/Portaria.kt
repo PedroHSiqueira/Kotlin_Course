@@ -1,7 +1,7 @@
 package control
 
 import business.ConvidadoBusiness
-import entity.Convite
+import entity.Convidado
 
 class Portaria {
 
@@ -14,7 +14,7 @@ class Portaria {
 
     private fun controle(): String {
         val idade = Console.readInt("Qual a sua idade? ")
-        val convidado = Convite(idade = idade)
+        val convidado = Convidado(idade = idade)
         if (!convidadoBusiness.maiorDeIdade(convidado.idade)) {
             return "Acesso Negado, Menores de idade não são permitidos"
         }
